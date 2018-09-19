@@ -4,7 +4,7 @@ use Backend;
 use System\Classes\PluginBase;
 
 /**
- * siteConfig Plugin Information File
+ * CustomSettings Plugin Information File
  */
 class Plugin extends PluginBase
 {
