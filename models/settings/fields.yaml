@@ -1,0 +1,30 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        phone:
+            label: Phone
+            type: text
+            tab: Contacts
+
+        email:
+            label: Email
+            type: text
+            tab: Contacts
+
+        address:
+            label: Address
+            type: text
+            tab: Contacts
+
+        facebook:
+            label: Facebook
+            type: text
+            tab: Social Media
+
+        twitter:
+            label: Twitter
+            type: text
+            tab: Social Media
