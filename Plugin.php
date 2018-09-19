@@ -1,4 +1,4 @@
-<?php namespace Lime\SiteConfig;
+<?php namespace Lime\CustomSettings;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -16,8 +16,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name' => 'lime.siteconfig::lang.plugin_name',
-            'description' => 'lime.siteconfig::lang.plugin_description',
+            'name' => 'lime.customsettings::lang.plugin_name',
+            'description' => 'lime.customsettings::lang.plugin_description',
             'author' => 'lime',
             'icon' => 'icon-cog'
         ];
@@ -51,7 +51,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Lime\SiteConfig\Components\SiteConfig' => 'SiteConfig',
+            'Lime\CustomSettings\Components\CustomSettings' => 'CustomSettings',
         ];
     }
 
@@ -65,8 +65,8 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'lime.siteconfig.some_permission' => [
-                'tab' => 'siteConfig',
+            'lime.customsettings.some_permission' => [
+                'tab' => 'CustomSettings',
                 'label' => 'Some permission'
             ],
         ];
@@ -86,10 +86,10 @@ class Plugin extends PluginBase
     {
         return [
             'settings' => [
-                'label' => 'lime.siteconfig::lang.plugin_name',
-                'description' => 'lime.siteconfig::lang.plugin_description',
+                'label' => 'lime.customsettings::lang.plugin_name',
+                'description' => 'lime.customsettings::lang.plugin_description',
                 'icon' => 'icon-cog',
-                'class' => 'Lime\SiteConfig\Models\Settings',
+                'class' => 'Lime\CustomSettings\Models\Settings',
                 'order' => 1
             ]
         ];

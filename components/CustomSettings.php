@@ -1,15 +1,15 @@
-<?php namespace Lime\SiteConfig\Components;
+<?php namespace Lime\CustomSettings\Components;
 
 use Cms\Classes\ComponentBase;
-use Lime\Siteconfig\Models\Settings;
+use Lime\CustomSettings\Models\Settings;
 
-class SiteConfig extends ComponentBase
+class CustomSettings extends ComponentBase
 {
     public function componentDetails()
     {
         return [
-            'name'        => 'lime.siteconfig::lang.component_name',
-            'description' => 'lime.siteconfig::lang.component_description'
+            'name'        => 'lime.customsettings::lang.component_name',
+            'description' => 'lime.customsettings::lang.component_description'
         ];
     }
 
